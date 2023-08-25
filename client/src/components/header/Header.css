@@ -1,0 +1,178 @@
+.header {
+    background-color: #8a2be2;
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+.headerContainer {
+    width: 100%;
+    max-width: 1024px;
+    margin: 20px 0px 100px 0px;
+}
+
+.headerContainer.listMode {
+    margin: 20px 0px 0px 0px;
+}
+
+.HeaderList {
+    display: flex;
+    gap: 40px;
+    margin-bottom: 50px;
+}
+
+.HeaderDesc {
+    margin: 20px 0px;
+}
+
+.HeaderListItem {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.HeaderListItem.active {
+    border: 1px solid white;
+    padding: 10px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.HeaderDesc {
+    margin: 20px 0px;
+}
+
+.HeaderBtn {
+    background-color: #800080;
+    color:#ffffff;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.HeaderSearch {
+    height: 30px;
+    background-color: #ffffff;
+    border: 3px solid #e66c81;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 10px 0px;
+    border-radius: 5px;
+    position: absolute;
+    bottom: -25px;
+    width: 100%;
+    max-width: 1024px;
+}
+
+.HeaderIcon {
+    color: #800080;
+}
+
+.HeaderSearchItem {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.HeaderSearchInput {
+    border: none;
+    outline: none;
+}
+
+.HeaderSearchText {
+    color: #80008067;
+    cursor: pointer;
+}
+
+.date {
+     position: absolute;
+     top: 50px;
+     z-index: 2;
+}
+
+.options {
+    z-index: 2;
+    position: absolute;
+    top: 50px;
+    background-color: #ffffff;
+    color: gray;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px -5px rgba(0, 0, 0, 0.4);
+}
+
+.OptionsItem {
+   width: 200px;
+   display: flex;
+   justify-content: space-between;
+   margin: 10px;
+}
+
+.OptionCounter {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 12px;
+    color: #000000;
+}
+
+.OptionCounterButton {
+    width: 30px;
+    height: 30px;
+    border: 2px;
+    color: #800080;
+    cursor: pointer;
+    background-color: #ffffff;
+}
+
+.OptionCounterButton:disabled {
+    cursor: not-allowed;
+}
+
+
+/*--------Media queries for small screen---------*/
+
+@media only screen and (max-width:600px) {
+    .headerContainer {
+        width: 500%;
+        height: 500%;
+    }
+
+    .HeaderListItem.active {
+        padding: 5px;
+        margin: 10px;
+    }
+
+    .HeaderDesc {
+        margin: 10px 0px;
+    }
+
+    .HeaderSearchInput {
+        width: 100%;
+        height: 100%;
+    }
+
+    .HeaderBtn {
+        font-size: 250;
+    }
+
+    .HeaderSearchItem {
+        gap: 5px;
+    }
+
+    .OptionsItem {
+        width: 100px;
+        margin: 5px;
+    }
+
+    .OptionCounter {
+        gap: 5px;
+        padding: 6px;
+    }
+
+    .OptionCounterButton {
+        width: 15px;
+        height: 15px;
+        border: 1px;
+    }
+}
