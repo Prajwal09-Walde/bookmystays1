@@ -6,8 +6,7 @@
   "devDependencies": {},
   "type": "module",
   "scripts": {
-    "start": "nodemon index.js",
-    "build": "npm run build"
+    "start": "nodemon index.js"
   },
   "keywords": [],
   "author": "",
