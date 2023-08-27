@@ -10,18 +10,17 @@ import cors from "cors";
 const app = express();
 dotenv.config();
 
-const connect = async () => {
+async function connect () {
     try {
         await mongoose.connect(process.env.MONG, {
             useNewUrlParser: true,
             useUnifiedTopology: true,
-        });
-        console.log("Connected to mongoDB :)");
+        })
+        console.log("Connected to mongodb :)")
     }catch (error) {
         console.error(error);
     }
 }
-
 mongoose.connection.on("disconnected", () => {
     console.log("mongoDB disconnected :(");
 });
