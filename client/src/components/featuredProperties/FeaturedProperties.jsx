@@ -4,7 +4,7 @@ import './featuredProperties.css'
 
 const FeaturedProperties = () => {
 
-  const {loading, data, error} = useFetch("/hotels?featured=true");
+  const {loading, data, error} = useFetch();
   return (
     <div className='featuredProperties'>
       {loading ? (
