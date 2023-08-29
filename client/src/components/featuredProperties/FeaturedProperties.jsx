@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 import useFetch from '../../hooks/useFetch'
 import './featuredProperties.css'
 
