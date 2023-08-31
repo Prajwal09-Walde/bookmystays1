@@ -4,7 +4,7 @@ import "./Featured.css"
 const Featured = () => {
 
   const {data, loading, error} = useFetch(
-    "https://bookmystays.onrender.com/api/hotels/countByCity?cities=Mumbai,Goa,Delhi,Hrishikesh,Lonavala,Bengaluru"
+    "https://bookmystays.onrender.com/api/hotels/countByCity?cities=Mumbai,Goa,Delhi,Hrishikesh,Lonavala,Bengaluru,Kolkata"
     );
 
   return (
@@ -70,6 +70,15 @@ const Featured = () => {
               <div className="featuredTitle">
                 <h1>Bengaluru</h1>
                 <h2>{data[5]} properties</h2>
+              </div>
+            </div>
+            <div className="featuredItem">
+              <img src="https://cf.bstatic.com/xdata/images/xphoto/300x240/140018328.jpg?k=07a99dda2ec36cb3ef59cf6c57aa595d82aa7d695676d1c05e1d70ba6ce58f83&o=" 
+                alt ="" 
+                className="featuredImage"/>
+              <div className="featuredTitle">
+                <h1>Kolkata</h1>
+                <h2>{data[6]} properties</h2>
               </div>
             </div>
           </>
