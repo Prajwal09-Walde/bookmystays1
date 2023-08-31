@@ -17,7 +17,7 @@ const List = () => {
   const [min, setMin] = useState(undefined);
   const [max, setMax] = useState(undefined);
 
-  const {data, loading, error, reFetch} = useFetch(`/hotels?city=${destination}`);
+  const {data, loading, error, reFetch} = useFetch(`https://bookmystays.onrender.com/api/hotels?city=${destination}`);
 
   const handleClick = () => {
     reFetch();

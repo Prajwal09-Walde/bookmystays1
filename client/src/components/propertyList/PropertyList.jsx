@@ -14,7 +14,7 @@ const PropertyList = () => {
     "https://q-xx.bstatic.com/xdata/images/xphoto/263x210/45450093.jpeg?k=aa5cc7703f3866af8ffd6de346c21161804a26c3d0a508d3999c11c337506ae1&o=",
   ]
 
-  const {data, loading, error} = useFetch("/hotels/countByType")
+  const {data, loading, error} = useFetch("https://bookmystays.onrender.com/api/hotels/countByType")
 
   return (
     <div className="pList">

@@ -4,7 +4,7 @@ import "./Featured.css"
 const Featured = () => {
 
   const {data, loading, error} = useFetch(
-    "/hotels/countByCity?cities=Mumbai,Goa,Delhi,Hrishikesh,Lonavala,Bengaluru"
+    "https://bookmystays.onrender.com/api/hotels/countByCity?cities=Mumbai,Goa,Delhi,Hrishikesh,Lonavala,Bengaluru"
     );
 
   return (
